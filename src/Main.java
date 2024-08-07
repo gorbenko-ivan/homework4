@@ -9,7 +9,7 @@ public class Main {
         }
 
 
-        short temperatara = 2;
+        short temperatara = 5;
         if (temperatara < 5) {
             System.out.println("На улице " + temperatara + " градусов нужно надеть шапку");
         } else {
@@ -35,18 +35,18 @@ public class Main {
         if (age1 >= 18 && age1 <= 24) {
             System.out.println("Если возраст человека равен " + age1 + " то ему нужно ходить в университет ");
         }
-        if (age1 >= 24) {
+        if (age1 > 24) {
             System.out.println("Если возраст человека равен " + age1 + " то ему нужно ходить на работу ");
         }
 
         byte childsAge = 1;
-        if (childsAge <= 5) {
+        if (childsAge < 5) {
             System.out.println("Если возраст ребенка равен " + childsAge + " то ему нельзя кататься на аттракционе");
         }
-        if (childsAge > 5 && childsAge < 14) {
+        if (childsAge >= 5 && childsAge <= 14) {
             System.out.println("Если возраст ребенка равен " + childsAge + " то ему можно кататься на аттракционе в сопровождении взрослого");
         }
-        if (childsAge >= 14) {
+        if (childsAge > 14) {
             System.out.println("Если возраст ребенка равен " + childsAge + " то ему можно кататься на аттракционе без сопровождения взрослого");
         }
 
@@ -63,16 +63,15 @@ public class Main {
             }
         }
 
-        int one = 567;
-        int two = 56778;
-        int three = 67;
+        int one = 1;
+        int two = 2;
+        int three = 3;
         if (one > two && one > three) {
             System.out.println(one);
         } else {
             if (two > one && two > three) {
                 System.out.println(two);
-            }
-            if (three > one && three > two) {
+            } else {
                 System.out.println(three);
             }
         }
